@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcularFactorial(numero) {
+    
+    if (numero < 0) {
+        return "El factorial no está definido para números negativos.";
+    }
+    
+    
+    var factorial = 1;
+
+   
+    for (let i = 1; i <= numero; i++) {
+        factorial *= i;  i
+    }
+
+    return factorial; 
+}
+
+
+var numero = prompt("Ingresa un número para calcular su factorial:");
+numero = Number(numero);
+alert("El factorial de " + numero + " es: " + calcularFactorial(numero));
+
+    </script>
+    
+</body>
+</html>
